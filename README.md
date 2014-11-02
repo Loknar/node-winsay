@@ -36,7 +36,7 @@ winsay.speakSync("Bad News', 'I feel slow and sluggish!", function () {
 console.log("this doesn't run until after the syncronous call");
 
 ```
-Note: changing the voice hasn't been implemented yet (v0.0.1).
+Note: changing the voice hasn't been implemented yet (v0.0.2).
 
 
 ## License
