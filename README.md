@@ -4,7 +4,7 @@ node-winsay
 TTS module (text to speech) for node.js on windows using Edge.js
 
 ## Credits
-Uses [Edge.js](https://github.com/tjanczuk/edge) to hook into the System.Speech.Synthesis framework with a short C# code snippet. This winsay module is inspired by the [say.js](https://github.com/Marak/say.js) module which currently supports Mac OS X and Linux but not Windows (at this time of writing v0.6.0).
+Uses [Edge.js](https://github.com/tjanczuk/edge) to hook into System.Speech.Synthesis with a short C# code snippet. The winsay module is inspired by [say.js](https://github.com/Marak/say.js) which currently supports Mac OS X and Linux but not Windows (at this time of writing v0.6.0).
 
 ## Installation
 
@@ -14,12 +14,17 @@ Install using `npm`,
 $ npm install winsay
 ```
 
+## Usage
+winsay.speak(voice, text, [callback])
+or
+winsay.speakSync(voice, text, [callback])
+
 ## Usage Example
 ``` javascript
 var winsay = require('winsay');
 
 // no callback, fire and forget
-winsay.speak("GLaDOS", "Hello, and, again, welcome to the Aperture Science Computer-Aided Enrichment Center");
+winsay.speak("GLaDOS", "Hello, and welcome to the Aperture Science Enrichment Center");
 
 // use default voice in System Preferences
 winsay.speak(null, "Hello!");
@@ -28,16 +33,19 @@ winsay.speak(null, "Hello!");
 winsay.speak("Good News', 'You've won the internet!", function () {
      console.log("text to speech complete");
 });
+console.log("This text is printed before you win the internet.");
 
 // syncronous speak function also available
-winsay.speakSync("Bad News', 'I feel slow and sluggish!", function () {
-     console.log("text to speech complete");
+winsay.speakSync("Bad News", "I block you!", function () {
+     console.log("A wild Pikachu appears.");
 });
-console.log("this doesn't run until after the syncronous call");
+console.log("This text is printed after you encounter the wild Pikachu.");
 
 ```
-Note: changing the voice hasn't been implemented yet (v0.0.2).
+Note: changing the voice hasn't been implemented yet (v0.0.2), hopefully someday I or someone else will find out how easy it is and implement it.
 
+## fun facts
+```winsay.speak()``` calls are asynchronous, yay ^_^
 
 ## License
 (MIT License)
