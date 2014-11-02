@@ -38,9 +38,7 @@ winsay.speak("Good News', 'You've won the internet!", function () {
 console.log("This text is printed before you win the internet.");
 
 // syncronous speak function also available
-winsay.speakSync("Bad News", "I block you!", function () {
-     console.log("A wild Pikachu appears.");
-});
+winsay.speakSync("Red", "A wild Pikachu appears.");
 console.log("This text is printed after you encounter the wild Pikachu.");
 
 ```
