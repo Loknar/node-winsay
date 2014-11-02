@@ -33,7 +33,7 @@ winsay.speak('Good News', 'You've won the internet!', function () {
 winsay.speakSync('Bad News', 'I feel slow and sluggish!', function () {
      console.log('text to speech complete');
 });
-console.log('this doesn't run until after the syncronous call');
+console.log("this doesn't run until after the syncronous call");
 
 ```
 Note: changing the voice hasn't been implemented yet (v0.0.1).
