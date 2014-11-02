@@ -22,16 +22,16 @@ var winsay = require('winsay');
 winsay.speak("GLaDOS", "Hello, and, again, welcome to the Aperture Science Computer-Aided Enrichment Center");
 
 // use default voice in System Preferences
-winsay.speak(null, 'Hello!');
+winsay.speak(null, "Hello!");
 
 // output some text to the console after the callback has completed
-winsay.speak('Good News', 'You've won the internet!', function () {
-     console.log('text to speech complete');
+winsay.speak("Good News', 'You've won the internet!", function () {
+     console.log("text to speech complete");
 });
 
 // syncronous speak function also available
-winsay.speakSync('Bad News', 'I feel slow and sluggish!', function () {
-     console.log('text to speech complete');
+winsay.speakSync("Bad News', 'I feel slow and sluggish!", function () {
+     console.log("text to speech complete");
 });
 console.log("this doesn't run until after the syncronous call");
 
