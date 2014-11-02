@@ -19,7 +19,7 @@ winsay.speak(voice, text, [callback])
 
 or
 
-winsay.speakSync(voice, text, [callback])
+winsay.speakSync(voice, text)
 
 ## Usage Example
 ``` javascript
