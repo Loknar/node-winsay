@@ -1,0 +1,34 @@
+{
+  "name": "winsay",
+  "description": "TTS module (text to speech) for windows using Edge.js",
+  "version": "0.0.1",
+  "author": "Sveinn Floki Gudmundsson <svefgud@gmail.com>",
+  "contributors": [
+    {
+      "name": "Sveinn Floki Gudmundsson",
+      "email": "svefgud@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Loknar/node-winsay.git"
+  },
+  "main": "winsay.js",
+  "keywords": [
+    "say",
+    "speak",
+    "windows",
+    "TTS",
+    "text to speech"
+  ],
+  "bugs": {
+    "url": "https://github.com/Loknar/node-winsay/issues"
+  },
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "dependencies": {
+    "edge": "~0.9.3"
+  },
+  "license": "MIT"
+}
