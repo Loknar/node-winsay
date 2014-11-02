@@ -16,7 +16,9 @@ $ npm install winsay
 
 ## Usage
 winsay.speak(voice, text, [callback])
+
 or
+
 winsay.speakSync(voice, text, [callback])
 
 ## Usage Example
