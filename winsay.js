@@ -36,7 +36,7 @@ function speak(voice, input, callback) {
     });
     child.on('message', function(o) {
         child.disconnect();
-        callback(o.error, o.result);
+        if(typeof callback !== "undefined") callback(o.error, o.result);
     });
 }
 
