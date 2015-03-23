@@ -28,7 +28,7 @@
     "node": ">= 0.8"
   },
   "dependencies": {
-    "edge": "~0.9.3"
+    "edge": "^0.10.1"
   },
   "license": "MIT"
 }
