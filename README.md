@@ -2,7 +2,7 @@ node-winsay
 ===========
 TTS module (text to speech) for node.js on windows using Edge.js
 
-Note: changing the voice hasn't been implemented yet (v0.0.3), hopefully someday I or someone else will find out how easy it is and implement it.
+Note: changing the voice hasn't been implemented yet (v0.0.4), hopefully someday I or someone else will find out how easy it is and implement it.
 
 ## Credits
 Uses [Edge.js](https://github.com/tjanczuk/edge) to hook into System.Speech.Synthesis with a short C# code snippet. The winsay module is inspired by [say.js](https://github.com/Marak/say.js) which currently supports Mac OS X and Linux but not Windows (at this time of writing v0.6.0).
