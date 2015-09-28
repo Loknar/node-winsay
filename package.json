@@ -1,7 +1,7 @@
 {
   "name": "winsay",
   "description": "TTS module (text to speech) for windows using Edge.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Sveinn Floki Gudmundsson <svefgud@gmail.com>",
   "contributors": [
     {
@@ -28,7 +28,7 @@
     "node": ">= 0.8"
   },
   "dependencies": {
-    "edge": "^0.10.1"
+    "edge": "^4.0.0"
   },
   "license": "MIT"
 }
